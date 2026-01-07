@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ku">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+ <nav class="menu">
+  <a href="#about">دەربارەی من</a>
+  <a href="#skills">بەهرەکان</a>
+  <a href="#contact">پەیوەندی</a>
+</nav>
+
+  <div class="headerBtns">
+    <button class="logoutBtn" onclick="logout()">➜</button>
+    <button onclick="toggleColors()">🎨</button>
+    <button onclick="showQR()">📲</button>
+    
+</div>
+  </div>
+
+  <div id="colors" class="colorCircles">
+    <span style="background:linear-gradient(45deg,#ffd000,#ff7a00)"
+      onclick="setGradient('#ffd000','#ff7a00','#ff0000','#000')"></span>
+
+    <span style="background:linear-gradient(45deg,#dbd80d,#000000)"
+      onclick="setGradient('#00c3ff','#ffff1c','#f5f7fa','#000')"></span>
+
+    <span style="background:linear-gradient(45deg,#11998e,#38ef7d)"
+      onclick="setGradient('#11998e','#38ef7d','#0f2027','#fff')"></span>
+
+    <span style="background:linear-gradient(45deg,#1dc70e,#ffffff)"
+      onclick="setGradient('#fc466b','#3f5efb','#0f2027','#fff')"></span>
+  </div>
+</header>
+
+<!-- ADS -->
+<div class="ads">
+  <img id="adMedia" src="images/ads2.jpg">
+    
+</div>
+
+<section id="about">
+  <div class="profile">
+    <div class="avatar">
+      <img src="images/mee.jpg">
+    </div>
+    <h2 id="typeText"></h2>
+    <p>ناو: مەتین حمدامین حمد</p>
+    <p>لەدایکبووی: ٢٠٠٣</p>
+    <p>پسپۆڕی: تەکنەلۆجیای زانیاری</p>
+        <p>شوێن: هەریر</p>
+
+  </div>
+</section>
+
+<section id="skills">
+  <h2>بەهرەکان</h2>
+  <div class="cards">
+    <div class="card">دیزاین</div>
+    <div class="card">کامێرای چاودێری</div>
+    <div class="card">سۆشیاڵ میدیا</div>
+    <div class="card">درووستکردنی CV</div>
+    <div class="card">کۆمپیوتەر</div>
+    <div class="card">مۆبایل</div>
+  </div>
+</section>
+
+<section id="contact" class="full">
+  <h2>پەیوەندی</h2>
+  <div class="social">
+    <a href="https://www.facebook.com/share/18Fdr3UdkZ/" target="_blank">Facebook</a>
+    <a href="https://www.instagram.com/matten_surchi?igsh=YWxtY2lhdnNnejMz" target="_blank">Instagram</a>
+    <a href="https://www.tiktok.com/@mateen_surchi?lang=en-GB&is_from_webapp=1&sender_device=mobile&sender_web_id=7592212441887442448" target="_blank">TikTok</a>
+    <a href="https://www.snapchat.com/add/maten_hamadamin?share_id=e7wO1JK-b80&locale=en-AU" target="_blank">Snapchat</a>
+    <a href="https://wa.me/9647805269286">WhatsApp</a>
+    <a href="https://t.me/mateenit1">Telegram</a>
+    <a href="tel:+9647517902474">📞 Korek</a>
+    <a href="tel:+9647805269286">📞 Zain</a>
+  </div>
+</section>
+
+<footer>
+ <B> © 2026 Mateen IT هەموو مافەکان پارێزراون</B> 
+</footer>
+
+<!-- QR -->
+<div id="qrBox" onclick="hideQR()">
+  <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://mateenit.bio.link">
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
