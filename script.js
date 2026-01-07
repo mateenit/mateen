@@ -38,9 +38,9 @@ setInterval(()=>{
 
 // ads slider
 const ads=[
-  {type:'image',src:'images/ads3.jpg'},
-  {type:'image',src:'images/ads4.jpg'},
-  {type:'image',src:'images/ads3.jpg'},
+  {type:'image',src:'ads3.jpg'},
+  {type:'image',src:'ads4.jpg'},
+  {type:'image',src:'ads3.jpg'},
   
 ];
 let adIndex=0;
