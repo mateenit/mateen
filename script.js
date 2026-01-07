@@ -52,4 +52,4 @@ setInterval(()=>{
   }else{
     el.outerHTML=`<img id="adMedia" src="${ads[adIndex].src}">`;
   }
-},15000);
+},4000);
