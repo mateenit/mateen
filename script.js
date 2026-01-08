@@ -18,6 +18,10 @@ function logout(){
   }
 }
 
+function toggleMenu(){
+  document.getElementById("mobileMenu").classList.toggle("show");
+}
+
 // QR
 function showQR(){
   document.getElementById('qrBox').style.display='flex';
