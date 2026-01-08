@@ -21,6 +21,10 @@ function logout(){
 function toggleMenu(){
   document.getElementById("mobileMenu").classList.toggle("show");
 }
+document.querySelector(".contact-form").addEventListener("submit", e=>{
+  e.preventDefault();
+  alert("نامەکەت بە سەرکەوتوویی نێردرا 👌");
+});
 
 // QR
 function showQR(){

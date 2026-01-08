@@ -19,6 +19,52 @@
   transition:.3s;
 }
 
+.contact-section{
+  padding:40px 20px;
+  text-align:center;
+}
+
+.contact-form{
+  max-width:400px;
+  margin:auto;
+  padding:25px;
+  border-radius:15px;
+  background:rgba(13, 53, 138, 0.123);
+  border:2px solid transparent;
+  background:
+    linear-gradient(#000000,#000) padding-box,
+    linear-gradient(45deg, red, yellow, lime) border-box;
+}
+
+.contact-form input,
+.contact-form textarea{
+  width:100%;
+  margin:10px 0;
+  padding:12px;
+  border:none;
+  border-radius:8px;
+  background:#172041;
+  color:#fff;
+  outline:none;
+}
+
+.contact-form button{
+  width:100%;
+  padding:12px;
+  border:none;
+  border-radius:10px;
+  background:gold;
+  color:#000;
+  font-weight:bold;
+  cursor:pointer;
+  transition:.3s;
+}
+
+.contact-form button:hover{
+  background:orange;
+  box-shadow:0 0 10px gold;
+}
+
 .logoutBtn:hover{
   background:#ff4d4d;
   color:#fff;
