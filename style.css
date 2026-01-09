@@ -177,7 +177,36 @@ section{
   padding:60px 20px;
   text-align:center;
 }
+:root{
+  --bg:#000;
+  --text:#fff;
+  --card:#111;
+}
 
+body{
+  background:var(--bg);
+  color:var(--text);
+  transition:.3s;
+}
+
+.card, .section, .contact-form{
+  background:var(--card);
+}
+
+/* دۆخی ڕووناک */
+body.light{
+  --bg:#f5f5f5;
+  --text:#000;
+  --card:#fff;
+}
+
+.theme-btn{
+  background:none;
+  border:none;
+  font-size:22px;
+  cursor:pointer;
+  color:var(--text);
+}
 .full{
   min-height:100vh;
 }

@@ -17,7 +17,25 @@ function logout(){
     window.location.href="index.html";
   }
 }
+const btn = document.getElementById("themeToggle");
 
+btn.onclick = ()=>{
+  document.body.classList.toggle("light");
+
+  if(document.body.classList.contains("light")){
+    btn.textContent = "☀️";
+    localStorage.setItem("theme","light");
+  }else{
+    btn.textContent = "🌙";
+    localStorage.setItem("theme","dark");
+  }
+};
+
+/* هێنانی دۆخی پێشوو */
+if(localStorage.getItem("theme")==="light"){
+  document.body.classList.add("light");
+  btn.textContent="☀️";
+}
 function toggleMenu(){
   document.getElementById("mobileMenu").classList.toggle("show");
 }
@@ -46,9 +64,13 @@ setInterval(()=>{
 
 // ads slider
 const ads=[
-  {type:'image',src:'ads3.jpg'},
-  {type:'image',src:'ads4.jpg'},
-  {type:'image',src:'ads3.jpg'},
+  {type:'image',src:'harir.png'},
+  {type:'video',src:'batas.mp4'},
+  {type:'image',src:'batas.png'},
+  {type:'video',src:'mg.mp4'},
+  {type:'image',src:'rezhwan.png'},
+  
+   
   
 ];
 let adIndex=0;
